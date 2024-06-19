@@ -810,7 +810,7 @@ body {
 	filter: grayscale(0.5);
 }
 
-/* ! page fourth */
+/* ! page four */
 /* ? hero fourth */
 .hero__fourth {
 	position: relative;
@@ -857,7 +857,7 @@ body {
 	margin-top: -10px;
 }
 
-/* ! page fifth */
+/* ! page five */
 /* ? hero fifth */
 .hero__fifth {
 	position: relative;
@@ -1246,8 +1246,8 @@ body {
 	.gallery__image {
 		width: 500px;
 	}
-	/* ! page fourth */
-	/* ! page fifth */
+	/* ! page four */
+	/* ! page five */
 	.contact__box {
 		grid-template-columns: auto;
 	}
@@ -1394,8 +1394,8 @@ body {
 	.gallery__image {
 		width: 300px;
 	}
-	/* ! page fourth */
-	/* ! page fifth */
+	/* ! page four */
+	/* ! page five */
 	.hero__fifth__box {
 		padding: 400px var(--padding-inset) 300px;
 	}

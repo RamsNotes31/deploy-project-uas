@@ -210,7 +210,7 @@ body {
 	transition: var(--transition);
 }
 .hero__button:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 /* ? explore */
@@ -320,7 +320,7 @@ body {
 	transition: var(--transition);
 }
 .services__child:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 .services__bg__image {
 	width: 80px;
@@ -516,7 +516,7 @@ body {
 	transition: var(--transition);
 }
 .skill__child:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 .skill__bg__image {
 	width: 80px;
@@ -749,7 +749,7 @@ body {
 	color: var(--ternary-color);
 }
 .populer__button:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 /* ? gallery */
@@ -966,9 +966,10 @@ body {
 	color: var(--ternary-color);
 	padding: 20px;
 	margin-top: 30px;
+	font-size: var(--font-size-h4);
 }
 .contact__button:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 .contact__right {
 	display: grid;
@@ -1056,7 +1057,7 @@ body {
 	transition: var(--transition);
 }
 .subcribe__button:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 /* ? totop */
@@ -1075,6 +1076,10 @@ body {
 	cursor: pointer;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 	z-index: 99;
+	transition: var(--transition);
+}
+.totop:hover {
+	transform: scale(1.1);
 }
 .totop__icon {
 	font-size: var(--font-size-h3);

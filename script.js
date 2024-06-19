@@ -58,3 +58,27 @@ window.addEventListener('scroll', function () {
 document.getElementById('backToHome').addEventListener('click', function () {
 	window.location.href = 'index.html';
 });
+
+// ? button untuk mengirimkan email
+document.getElementById('submitEmail').addEventListener('click', function () {
+	var email = document.getElementById('inputEmail').value;
+
+	alert('Terima kasih telah mengirimkan email untuk mendapatkan special promotion dan monthly newsletter.');
+
+	// Me-reload halaman setelah menampilkan alert
+	setTimeout(function () {
+		location.reload();
+	}, 500); // Me-reload halaman setelah 1 detik
+});
+
+// ? button untuk mengirimkan hasil search
+document.getElementById('submitSearch').addEventListener('click', function () {
+	var search = document.getElementById('inputSearch').value;
+
+	alert('Mohon maaf konten yang anda cari tidak ditemukan.');
+
+	// Me-reload halaman setelah menampilkan alert
+	setTimeout(function () {
+		location.reload();
+	}, 500); // Me-reload halaman setelah 1 detik
+});

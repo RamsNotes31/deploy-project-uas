@@ -1195,6 +1195,22 @@ body {
 	.hidden__button {
 		display: block;
 	}
+	/* mengubah background video */
+	.hero {
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/hero.jpg');
+	}
+	.hero__second {
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/about.jpg');
+	}
+	.hero__third {
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/destination.jpg');
+	}
+	.hero__fourth {
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/blog.jpg');
+	}
+	.hero__fifth {
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/contact.jpg');
+	}
 	/* ! page one */
 	.hero__search {
 		width: 75%;

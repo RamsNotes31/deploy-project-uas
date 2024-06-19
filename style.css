@@ -810,9 +810,9 @@ body {
 	filter: grayscale(0.5);
 }
 
-/* ! fourth */
+/* ! page fourth */
 
-/* ! fifth */
+/* ! page fifth */
 /* ? hero fifth */
 .hero__fifth {
 	position: relative;
@@ -1201,8 +1201,8 @@ body {
 	.gallery__image {
 		width: 500px;
 	}
-	/* ! fourth page */
-	/* ! fifth page */
+	/* ! page fourth */
+	/* ! page fifth */
 	.contact__box {
 		grid-template-columns: auto;
 	}
@@ -1349,8 +1349,8 @@ body {
 	.gallery__image {
 		width: 300px;
 	}
-	/* ! fourth page */
-	/* ! fifth page */
+	/* ! page fourth */
+	/* ! page fifth */
 	.hero__fifth__box {
 		padding: 400px var(--padding-inset) 300px;
 	}

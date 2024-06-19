@@ -59,26 +59,36 @@ document.getElementById('backToHome').addEventListener('click', function () {
 	window.location.href = 'index.html';
 });
 
-// ? button untuk mengirimkan email
+// Button untuk mengirimkan email
 document.getElementById('submitEmail').addEventListener('click', function () {
 	var email = document.getElementById('inputEmail').value;
+
+	if (email === '') {
+		alert('Mohon isi input terlebih dahulu.');
+		return; // Menghentikan eksekusi kode di bawahnya
+	}
 
 	alert('Terima kasih telah mengirimkan email untuk mendapatkan special promotion dan monthly newsletter.');
 
 	// Me-reload halaman setelah menampilkan alert
 	setTimeout(function () {
 		location.reload();
-	}, 500); // Me-reload halaman setelah 1 detik
+	}, 500); // Me-reload halaman setelah 0,5 detik
 });
 
-// ? button untuk mengirimkan hasil search
+// Button untuk mengirimkan hasil search
 document.getElementById('submitSearch').addEventListener('click', function () {
 	var search = document.getElementById('inputSearch').value;
+
+	if (search === '') {
+		alert('Mohon isi input terlebih dahulu.');
+		return; // Menghentikan eksekusi kode di bawahnya
+	}
 
 	alert('Mohon maaf konten yang anda cari tidak ditemukan.');
 
 	// Me-reload halaman setelah menampilkan alert
 	setTimeout(function () {
 		location.reload();
-	}, 500); // Me-reload halaman setelah 1 detik
+	}, 500); // Me-reload halaman setelah 0,5 detik
 });

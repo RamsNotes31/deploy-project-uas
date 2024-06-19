@@ -54,7 +54,7 @@ window.addEventListener('scroll', function () {
 	oldValue = newValue;
 });
 
-// button untuk kembali ke home
+// ? button untuk kembali ke home
 document.getElementById('backToHome').addEventListener('click', function () {
 	window.location.href = 'index.html';
 });

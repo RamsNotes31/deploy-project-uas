@@ -153,9 +153,18 @@ body {
 .hero {
 	position: relative;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/hero.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.hero__video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -5;
 }
 .hero__box {
 	padding: 240px var(--padding-inset) 140px;
@@ -450,6 +459,7 @@ body {
 .hero__second {
 	position: relative;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/about.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -625,6 +635,7 @@ body {
 .hero__third {
 	position: relative;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/package.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -815,6 +826,7 @@ body {
 .hero__fourth {
 	position: relative;
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/blog.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -862,6 +874,7 @@ body {
 .hero__fifth {
 	position: relative;
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('images/contact.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

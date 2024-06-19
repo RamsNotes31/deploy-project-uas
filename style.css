@@ -811,6 +811,51 @@ body {
 }
 
 /* ! page fourth */
+/* ? hero fourth */
+.hero__fourth {
+	position: relative;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/blog.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hero__fourth__box {
+	padding: 460px var(--padding-inset) 360px;
+	color: var(--ternary-color);
+}
+.hero__fourth__title {
+	font-size: var(--font-size-h1);
+	text-align: center;
+}
+.hero__fourth__text {
+	font-size: var(--font-size-h3);
+	text-align: center;
+	color: var(--ternary-color);
+	display: block;
+}
+.hero__fourth__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 390px;
+}
+.hero__fourth__col {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.hero__fourth__icon {
+	font-size: var(--font-size-h3);
+	display: block;
+	cursor: pointer;
+	color: var(--ternary-color);
+	text-align: center;
+}
+.hero__fourth__span {
+	display: block;
+	margin-top: -10px;
+}
 
 /* ! page fifth */
 /* ? hero fifth */

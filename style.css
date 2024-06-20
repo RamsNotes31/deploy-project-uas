@@ -769,6 +769,7 @@ body {
 	border-radius: 10px;
 	overflow: hidden;
 	cursor: pointer;
+	position: relative;
 }
 .populer__image {
 	width: 350px;
@@ -887,6 +888,96 @@ body {
 }
 .gallery__image:hover {
 	filter: grayscale(0.5);
+}
+
+/* ? order */
+.order {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.4);
+	background-color: var(--primary-color);
+	padding: 35px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	transition: var(--transition);
+	/* opacity: 0; */
+}
+.order__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.order__title {
+	font-size: var(--font-size-h3);
+	color: var(--ternary-color);
+	align-self: flex-start;
+}
+.order__icon {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	font-size: var(--font-size-h3);
+	color: var(--ternary-color);
+	transition: var(--transition);
+}
+.order__icon:hover {
+	color: var(--secondary-color);
+}
+.order__box {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+.order__row {
+	display: flex;
+	flex-direction: column;
+}
+.order__label {
+	font-size: var(--font-size-h4);
+	color: var(--ternary-color);
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.order__input {
+	::placeholder {
+		font-size: var(--font-size-h5);
+	}
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-size: var(--font-size-h4);
+	color: var(--quarternary-color);
+}
+.order__button {
+	width: 160px;
+	height: auto;
+	border: none;
+	outline: none;
+	padding: 15px;
+	border-radius: 50px;
+	background-color: var(--secondary-color);
+	cursor: pointer;
+	transition: var(--transition);
+	color: var(--ternary-color);
+	align-self: flex-start;
+	margin-top: 20px;
+	font-size: var(--font-size-h4);
+}
+.order__button:hover {
+	transform: scale(1.05);
+}
+.none {
+	display: none;
 }
 
 /* ! page four */
@@ -1468,6 +1559,19 @@ body {
 	.gallery__image {
 		width: 500px;
 	}
+	.order {
+		width: 500px;
+		align-items: flex-start;
+	}
+	.order__box {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 100%;
+	}
+	.order__row {
+		width: 100%;
+	}
 	/* ! page four */
 	.blog__box {
 		grid-template-columns: auto;
@@ -1639,6 +1743,9 @@ body {
 		width: 300px;
 	}
 	.gallery__image {
+		width: 300px;
+	}
+	.order {
 		width: 300px;
 	}
 	/* ! page four */

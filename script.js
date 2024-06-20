@@ -59,7 +59,7 @@ document.getElementById('backToHome').addEventListener('click', function () {
 	window.location.href = 'index.html';
 });
 
-// Button untuk mengirimkan email
+// ? button untuk mengirimkan email
 document.getElementById('submitEmail').addEventListener('click', function () {
 	var email = document.getElementById('inputEmail').value;
 
@@ -76,7 +76,7 @@ document.getElementById('submitEmail').addEventListener('click', function () {
 	}, 500); // Me-reload halaman setelah 0,5 detik
 });
 
-// Button untuk mengirimkan hasil search
+// ? button untuk mengirimkan hasil search
 document.getElementById('submitSearch').addEventListener('click', function () {
 	var search = document.getElementById('inputSearch').value;
 
@@ -91,4 +91,36 @@ document.getElementById('submitSearch').addEventListener('click', function () {
 	setTimeout(function () {
 		location.reload();
 	}, 500); // Me-reload halaman setelah 0,5 detik
+});
+
+// ? button untuk order dan close
+// Ambil referensi elemen tombol dan elemen section
+const buttonOrder = document.getElementById('buttonOrder');
+const buttonClose = document.getElementById('buttonClose');
+const orderSection = document.getElementById('order');
+
+// Tambahkan event listener untuk tombol "Order"
+buttonOrder.addEventListener('click', () => {
+	orderSection.style.display = 'block';
+});
+
+// Tambahkan event listener untuk tombol "Close"
+buttonClose.addEventListener('click', () => {
+	orderSection.style.display = 'none';
+});
+
+// ? button untuk mengirimkan pesanan order
+const inputOrder = document.getElementById('inputOrder');
+const submitOrderButton = document.getElementById('submitOrder');
+
+submitOrderButton.addEventListener('click', () => {
+	const orderValue = inputOrder.value.trim();
+
+	if (orderValue) {
+		// Input sudah terisi, tampilkan alert ucapan terima kasih
+		alert('Terima kasih telah melakukan order di agen travel kami!');
+	} else {
+		// Input belum terisi, tampilkan alert permintaan mengisi input
+		alert('Mohon isi input terlebih dahulu.');
+	}
 });

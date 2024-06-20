@@ -1,4 +1,4 @@
-// ? hamburger menu and hidden box
+// ! hamburger menu and hidden box
 var buttonClicked = false;
 
 document.querySelector('.hidden__button').addEventListener('click', function () {
@@ -22,14 +22,14 @@ document.querySelector('.hidden__button').addEventListener('click', function () 
 	}
 });
 
-// ? tombol totop
+// ! tombol totop
 var toTop = document.getElementById('toTop');
 
 toTop.addEventListener('click', function () {
 	window.scrollTo(0, 0);
 });
 
-// ? animasi pada navbar
+// ! animasi pada navbar
 const nav = document.getElementById('navbar');
 let oldValue = 0;
 let animation_height = 100;
@@ -54,73 +54,79 @@ window.addEventListener('scroll', function () {
 	oldValue = newValue;
 });
 
-// ? button untuk kembali ke home
+// ! button untuk kembali ke home
 document.getElementById('backToHome').addEventListener('click', function () {
 	window.location.href = 'index.html';
 });
 
-// ? button untuk mengirimkan email
+// ! button untuk mengirimkan email
 document.getElementById('submitEmail').addEventListener('click', function () {
 	var email = document.getElementById('inputEmail').value;
 
 	if (email === '') {
-		alert('Mohon isi input terlebih dahulu.');
-		return; // Menghentikan eksekusi kode di bawahnya
+		alert('Please fill in the input first.');
+		return;
 	}
 
-	alert('Terima kasih telah mengirimkan email untuk mendapatkan special promotion dan monthly newsletter.');
+	alert('Thank you for sending an email to receive special promotions and the monthly newsletter.');
 
-	// Me-reload halaman setelah menampilkan alert
 	setTimeout(function () {
 		location.reload();
-	}, 500); // Me-reload halaman setelah 0,5 detik
+	}, 500);
 });
 
-// ? button untuk mengirimkan hasil search
+// ! button untuk mengirimkan hasil search
 document.getElementById('submitSearch').addEventListener('click', function () {
 	var search = document.getElementById('inputSearch').value;
 
 	if (search === '') {
-		alert('Mohon isi input terlebih dahulu.');
-		return; // Menghentikan eksekusi kode di bawahnya
+		alert('Please fill in the input first.');
+		return;
 	}
 
-	alert('Mohon maaf konten yang anda cari tidak ditemukan.');
+	alert('We apologize, but the content you are looking for was not found.');
 
-	// Me-reload halaman setelah menampilkan alert
 	setTimeout(function () {
 		location.reload();
-	}, 500); // Me-reload halaman setelah 0,5 detik
+	}, 500);
 });
 
-// ? button untuk order dan close
-// Ambil referensi elemen tombol dan elemen section
-const buttonOrder = document.getElementById('buttonOrder');
-const buttonClose = document.getElementById('buttonClose');
-const orderSection = document.getElementById('order');
-
-// Tambahkan event listener untuk tombol "Order"
-buttonOrder.addEventListener('click', () => {
-	orderSection.style.display = 'block';
-});
-
-// Tambahkan event listener untuk tombol "Close"
-buttonClose.addEventListener('click', () => {
-	orderSection.style.display = 'none';
-});
-
-// ? button untuk mengirimkan pesanan order
-const inputOrder = document.getElementById('inputOrder');
-const submitOrderButton = document.getElementById('submitOrder');
-
-submitOrderButton.addEventListener('click', () => {
-	const orderValue = inputOrder.value.trim();
-
-	if (orderValue) {
-		// Input sudah terisi, tampilkan alert ucapan terima kasih
-		alert('Terima kasih telah melakukan order di agen travel kami!');
+// ! button untuk order dan close
+function toggleOrderSection() {
+	const orderSection = document.querySelector('.order');
+	if (orderSection.style.display === 'none') {
+		orderSection.style.display = 'flex';
 	} else {
-		// Input belum terisi, tampilkan alert permintaan mengisi input
-		alert('Mohon isi input terlebih dahulu.');
+		orderSection.style.display = 'flex';
 	}
-});
+}
+
+function toggleOrderClose() {
+	const orderSection = document.querySelector('.order');
+	if (orderSection.style.display === 'flex') {
+		orderSection.style.display = 'none';
+	} else {
+		orderSection.style.display = 'none';
+	}
+}
+
+// ! button untuk mengirimkan pesanan order
+function inputValidation() {
+	const inputs = document.querySelectorAll('.order__input');
+	let isAllFilled = true;
+
+	inputs.forEach((input) => {
+		if (!input.value) {
+			isAllFilled = false;
+		}
+	});
+
+	if (isAllFilled) {
+		alert('Thank you for placing an order with our travel agency!');
+		setTimeout(function () {
+			location.reload();
+		}, 500);
+	} else {
+		alert('Please fill in the input first.');
+	}
+}

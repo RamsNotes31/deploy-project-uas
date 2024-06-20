@@ -908,6 +908,7 @@ body {
 	gap: 30px;
 	transition: var(--transition);
 	/* opacity: 0; */
+	display: none;
 }
 .order__header {
 	display: flex;
@@ -978,6 +979,7 @@ body {
 }
 .none {
 	display: none;
+	z-index: -100;
 }
 
 /* ! page four */

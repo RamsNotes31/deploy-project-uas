@@ -632,6 +632,72 @@ body {
 	text-align: justify;
 }
 
+/* ? team */
+.team {
+	position: relative;
+	padding: 140px var(--padding-inset);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+}
+.team__title {
+	font-size: var(--font-size-h2);
+	text-align: center;
+}
+.team__text {
+	font-size: var(--font-size-h4);
+	text-align: center;
+	color: var(--quarternary-color);
+}
+.team__box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	margin: 80px auto 0;
+	/* border: var(--border-line); */
+	/* height: 400px; */
+}
+.team__child {
+	width: 29%;
+	height: auto;
+	gap: 20px;
+	box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.4);
+	background-color: var(--ternary-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.team__bg__image {
+	width: 150px;
+	height: 150px;
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.team__image {
+	width: 100%;
+	height: auto;
+	display: block;
+	color: var(--ternary-color);
+}
+.team__child__title {
+	font-size: var(--font-size-h3);
+}
+.team__child__text {
+	font-size: var(--font-size-h4);
+	width: 85%;
+	color: var(--quarternary-color);
+	text-align: justify;
+}
+
 /* ! page three */
 /* ? hero third */
 .hero__third {
@@ -870,6 +936,7 @@ body {
 	display: block;
 	margin-top: -10px;
 }
+
 /* ? blog */
 .blog {
 	position: relative;
@@ -1009,6 +1076,7 @@ body {
 	display: block;
 	margin-top: -10px;
 }
+
 /* ? contact */
 .contact {
 	position: relative;
@@ -1184,6 +1252,7 @@ body {
 .subcribe__button:hover {
 	transform: scale(1.05);
 }
+
 /* ? totop */
 .totop {
 	width: 50px;
@@ -1209,6 +1278,7 @@ body {
 	font-size: var(--font-size-h3);
 	color: var(--ternary-color);
 }
+
 /* ? footer */
 .footer {
 	position: relative;
@@ -1371,6 +1441,14 @@ body {
 		/* flex: 1 0 40%; */
 		width: 45%;
 	}
+	.team__box {
+		/* flex-direction: column; */
+		flex-wrap: wrap;
+	}
+	.team__child {
+		/* flex: 1 0 40%; */
+		width: 45%;
+	}
 	/* ! page three */
 	.populer__box {
 		grid-template-columns: auto;
@@ -1528,6 +1606,16 @@ body {
 		flex-direction: column;
 	}
 	.update__child {
+		flex: 1 0 60%;
+		width: 320px;
+	}
+	.team {
+		padding: 100px var(--padding-inset);
+	}
+	.team__box {
+		flex-direction: column;
+	}
+	.team__child {
 		flex: 1 0 60%;
 		width: 320px;
 	}

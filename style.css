@@ -248,6 +248,7 @@ body {
 	font-size: var(--font-size-h4);
 	color: var(--quarternary-color);
 	margin: 20px;
+	text-align: center;
 }
 .explore__box {
 	display: flex;
@@ -1574,6 +1575,9 @@ body {
 	.order__row {
 		width: 100%;
 	}
+	.order__input {
+		width: 100%;
+	}
 	/* ! page four */
 	.blog__box {
 		grid-template-columns: auto;
@@ -1634,6 +1638,9 @@ body {
 		--font-size-h3: 17px;
 		--font-size-h4: 14px;
 		--font-size-h5: 11px;
+	}
+	::placeholder {
+		font-size: var(--font-size-h5);
 	}
 	.header {
 		height: 80px;

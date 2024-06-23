@@ -111,6 +111,22 @@ function toggleOrderClose() {
 }
 
 // ! button untuk mengirimkan pesanan order
+// step 1
+function nextValidation() {
+	const destinationInput = document.getElementById('destination');
+	const dateInput = document.getElementById('date');
+	const personInput = document.getElementById('person');
+
+	if (destinationInput.value && dateInput.value && personInput.value) {
+		const step1 = document.querySelector('.step1');
+		const step2 = document.querySelector('.step2');
+		step1.style.display = 'none';
+		step2.style.display = 'block';
+	} else {
+		alert('Please fill in the input first.');
+	}
+}
+// step 2
 function inputValidation() {
 	const inputs = document.querySelectorAll('.order__input');
 	let isAllFilled = true;

@@ -240,23 +240,44 @@
 					<h2 class="order__title">Hey, Book Your Next Travel Destination</h2>
 					<p href="" class="bx bx-x order__icon" onclick="toggleOrderClose()"></p>
 				</div>
+				<!-- step 1 -->
+				<div class="step1" style="width: 100%">
+					<div class="order__box">
+						<div class="order__row">
+							<label for="destination" class="order__label">Destination</label>
+							<input type="text" name="destination" id="destination" class="order__input" placeholder="Indonesia" />
+						</div>
+						<div class="order__row">
+							<label for="date" class="order__label">Date</label>
+							<input type="date" name="date" id="date" class="order__input" />
+						</div>
+						<div class="order__row">
+							<label for="person" class="order__label">Person(s)</label>
+							<input type="text" name="person" id="person" class="order__input" placeholder="2" />
+						</div>
+					</div>
 
-				<div class="order__box">
-					<div class="order__row">
-						<label for="destination" class="order__label">Destination</label>
-						<input type="text" name="destination" id="destination" class="order__input" placeholder="Indonesia" />
-					</div>
-					<div class="order__row">
-						<label for="date" class="order__label">Date</label>
-						<input type="date" name="date" id="date" class="order__input" />
-					</div>
-					<div class="order__row">
-						<label for="person" class="order__label">Person(s)</label>
-						<input type="text" name="person" id="person" class="order__input" placeholder="2" />
-					</div>
+					<button class="order__button" onclick="nextValidation()" type="button">Next</button>
 				</div>
+				<!-- step 2 -->
+				<div class="step2" style="width: 100%; display: none">
+					<div class="order__box">
+						<div class="order__row">
+							<label for="name" class="order__label">Name</label>
+							<input type="text" name="name" id="name" class="order__input" placeholder="Salman" />
+						</div>
+						<div class="order__row">
+							<label for="email" class="order__label">Email</label>
+							<input type="email" name="email" id="email" class="order__input" placeholder="salman@gmail.com" />
+						</div>
+						<div class="order__row">
+							<label for="number" class="order__label">Phone</label>
+							<input type="tel" name="number" id="number" class="order__input" placeholder="08123456789" />
+						</div>
+					</div>
 
-				<button class="order__button" onclick="inputValidation()">Book Now</button>
+					<button class="order__button" onclick="inputValidation()">Book Now</button>
+				</div>
 			</section>
 			<!-- ? order section -->
 

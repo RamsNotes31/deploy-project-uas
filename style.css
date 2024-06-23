@@ -938,6 +938,7 @@ body {
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 }
 .order__row {
 	display: flex;
@@ -958,7 +959,7 @@ body {
 	border: none;
 	outline: none;
 	font-size: var(--font-size-h4);
-	color: var(--quarternary-color);
+	color: var(--dark-color);
 }
 .order__button {
 	width: 160px;
